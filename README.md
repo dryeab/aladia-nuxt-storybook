@@ -1,1 +1,1 @@
-# Nuxt.js project
+# Nuxt 3 - Storybook
