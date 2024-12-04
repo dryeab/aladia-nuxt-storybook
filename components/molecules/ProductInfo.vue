@@ -7,8 +7,6 @@
 </template>
 
 <script setup>
-import Heading from '@/components/atoms/Heading.vue';
-import Price from '@/components/atoms/Price.vue';
 
 const props = defineProps({
   title: { type: String, required: true },

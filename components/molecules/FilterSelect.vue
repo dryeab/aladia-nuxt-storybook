@@ -1,21 +1,13 @@
-<!-- components/molecules/FilterSelect.vue -->
 <template>
   <div class="mb-4">
     <Label :for-id="id" :text="labelText" :label-class="labelClass" />
-    <Select
-      :id="id"
-      v-model="internalValue" 
-      :select-class="selectClass"
-    >
+    <Select :id="id" v-model="internalValue" :select-class="selectClass">
       <slot></slot>
     </Select>
   </div>
 </template>
 
 <script setup>
-import { ref, watch } from 'vue';
-import Label from '@/components/atoms/Label.vue';
-import Select from '@/components/atoms/Select.vue';
 
 const props = defineProps({
   id: { type: String, required: true },

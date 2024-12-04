@@ -8,8 +8,6 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue';
-import FilterSelect from '@/components/molecules/FilterSelect.vue';
 
 const props = defineProps({
   modelValue: { type: String, default: '' },

@@ -1,4 +1,3 @@
-<!-- components/atoms/Image.vue -->
 <template>
   <img :src="src" :alt="alt" :class="imgClass" />
 </template>
