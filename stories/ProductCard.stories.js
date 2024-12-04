@@ -1,10 +1,9 @@
-// stories/organisms/ProductCard.stories.js
-
 import ProductCard from "@/components/organisms/ProductCard.vue";
 
 export default {
   title: "Organisms/ProductCard",
   component: ProductCard,
+  tags: ["autodocs"],
   argTypes: {
     variant: {
       control: { type: "select", options: ["default", "horizontal"] },
@@ -12,32 +11,26 @@ export default {
   },
 };
 
-const Template = (args) => ({
-  components: { ProductCard },
-  setup() {
-    return { args };
+export const Default = {
+  args: {
+    product: {
+      title: "Sample Product",
+      price: 29.99,
+      category: "Electronics",
+      image: "https://via.placeholder.com/150",
+    },
+    variant: "default",
   },
-  template: '<ProductCard v-bind="args" />',
-});
-
-export const Default = Template.bind({});
-Default.args = {
-  product: {
-    title: "Sample Product",
-    price: 29.99,
-    category: "Electronics",
-    image: "https://via.placeholder.com/150",
-  },
-  variant: "default",
 };
 
-export const Horizontal = Template.bind({});
-Horizontal.args = {
-  product: {
-    title: "Sample Product",
-    price: 29.99,
-    category: "Electronics",
-    image: "https://via.placeholder.com/150",
+export const Horizontal = {
+  args: {
+    product: {
+      title: "Sample Product",
+      price: 29.99,
+      category: "Electronics",
+      image: "https://via.placeholder.com/150",
+    },
+    variant: "horizontal",
   },
-  variant: "horizontal",
 };

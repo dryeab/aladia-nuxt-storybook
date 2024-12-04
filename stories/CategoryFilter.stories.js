@@ -1,24 +1,13 @@
-// stories/organisms/CategoryFilter.stories.js
-
-import CategoryFilter from '@/components/organisms/CategoryFilter.vue';
+import CategoryFilter from "@/components/organisms/CategoryFilter.vue";
 
 export default {
-  title: 'Organisms/CategoryFilter',
+  title: "Organisms/CategoryFilter",
   component: CategoryFilter,
-  argTypes: {
-    modelValue: { control: 'text' },
-  },
+  tags: ["autodocs"],
 };
 
-const Template = (args) => ({
-  components: { CategoryFilter },
-  setup() {
-    return { args };
+export const Default = {
+  args: {
+    modelValue: "",
   },
-  template: '<CategoryFilter v-model="args.modelValue" />',
-});
-
-export const Default = Template.bind({});
-Default.args = {
-  modelValue: '',
 };
