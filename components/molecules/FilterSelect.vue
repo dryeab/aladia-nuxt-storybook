@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-4">
+  <div class="flex items-center space-x-5 my-8">
     <Label :for-id="id" :text="labelText" :label-class="labelClass" />
     <Select :id="id" v-model="internalValue" :select-class="selectClass">
       <slot></slot>
@@ -13,7 +13,7 @@ const props = defineProps({
   id: { type: String, required: true },
   labelText: { type: String, required: true },
   modelValue: { type: [String, Number], default: '' },
-  labelClass: { type: String, default: '' },
+  labelClass: { type: String, default: 'font-medium text-gray-700 mb-2' },
   selectClass: { type: String, default: '' },
 });
 
