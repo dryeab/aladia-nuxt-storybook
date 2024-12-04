@@ -1,5 +1,5 @@
 <template>
-  <p class="text-gray-700 mb-2">${{ amount.toFixed(2) }}</p>
+  <p class="mb-2 italic text-gray-500">${{ amount.toFixed(2) }}</p>
 </template>
 
 <script setup>

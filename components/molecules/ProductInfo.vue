@@ -2,7 +2,10 @@
   <div>
     <Heading :text="title" :size="titleSize" />
     <Price :amount="price" />
-    <p class="text-sm text-gray-600">{{ category }}</p>
+    <p class="text-sm text-gray-600">{{ category.toLowerCase()
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ') }}</p>
   </div>
 </template>
 

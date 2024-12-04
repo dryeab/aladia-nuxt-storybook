@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-white shadow fixed z-50 w-full">
+    <header class="bg-white shadow-lg fixed z-50 w-full">
         <div class="container mx-auto px-4 py-4 flex items-center justify-between">
             <Logo>MyStore</Logo>
             <NavigationMenu :items="navItems" />

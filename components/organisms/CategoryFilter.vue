@@ -2,10 +2,16 @@
   <FilterSelect id="category" label-text="Filter by Category:" v-model="internalCategory">
     <option value="">All Categories</option>
     <option v-for="category in categories" :key="category" :value="category">
-      {{ category }}
+      {{ category.toLowerCase()
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ')
+      }}
     </option>
   </FilterSelect>
 </template>
+
+
 
 <script setup>
 

@@ -1,7 +1,8 @@
 <template>
-    <a :href="href" class="text-gray-700 hover:text-indigo-600 px-3 py-2">
+    <NuxtLink :to="href"
+        class="text-gray-700 hover:text-indigo-600 px-3 py-2 hover:cursor-pointer block md:inline-block">
         <slot />
-    </a>
+    </NuxtLink>
 </template>
 
 <script setup>

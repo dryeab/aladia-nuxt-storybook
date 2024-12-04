@@ -1,6 +1,6 @@
 <template>
   <div class="mb-8">
-    <el-carousel height="300px" :interval="5000" arrow="always">
+    <el-carousel height="200px" :interval="5000" arrow="always">
       <el-carousel-item v-for="product in productsToShow" :key="product.id">
         <CarouselItemContent :product="product" />
       </el-carousel-item>
