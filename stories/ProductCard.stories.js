@@ -17,7 +17,8 @@ export const Default = {
       title: "Sample Product",
       price: 29.99,
       category: "Electronics",
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8amot7ROBW2ESuq38SW0xpV00YYm7Q_anfg&s",
     },
     variant: "default",
   },
@@ -29,7 +30,8 @@ export const Horizontal = {
       title: "Sample Product",
       price: 29.99,
       category: "Electronics",
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://cdn-images.farfetch-contents.com/21/67/63/24/21676324_51717167_1000.jpg",
     },
     variant: "horizontal",
   },
