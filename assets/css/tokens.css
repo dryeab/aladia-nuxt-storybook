@@ -1,0 +1,84 @@
+/* tokens.css */
+
+/* Color Tokens */
+:root {
+    /* Primary Colors */
+    --color-primary: #007bff;
+    --color-primary-light: #66b2ff;
+    --color-primary-dark: #0056b3;
+  
+    /* Secondary Colors */
+    --color-secondary: #6c757d;
+    --color-secondary-light: #a6a9ad;
+    --color-secondary-dark: #494e52;
+  
+    /* Neutral Colors */
+    --color-white: #ffffff;
+    --color-gray-light: #f8f9fa;
+    --color-gray-medium: #dee2e6;
+    --color-gray-dark: #343a40;
+    --color-black: #000000;
+  
+    /* Semantic Colors */
+    --color-success: #28a745;
+    --color-warning: #ffc107;
+    --color-error: #dc3545;
+    --color-info: #17a2b8;
+  }
+  
+  /* Typography Tokens */
+  :root {
+    --font-family-primary: 'Roboto', sans-serif;
+    --font-family-secondary: 'Georgia', serif;
+  
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+  
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+  
+    --line-height-tight: 1.2;
+    --line-height-regular: 1.5;
+    --line-height-loose: 1.8;
+  }
+  
+  /* Spacing Tokens */
+  :root {
+    --spacing-xxs: 0.25rem;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-xxl: 3rem;
+  }
+  
+  /* Border Tokens */
+  :root {
+    --border-radius-sm: 0.125rem;
+    --border-radius-md: 0.25rem;
+    --border-radius-lg: 0.5rem;
+  
+    --border-width-thin: 1px;
+    --border-width-medium: 2px;
+    --border-width-thick: 4px;
+  }
+  
+  /* Shadow Tokens */
+  :root {
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Z-Index Tokens */
+  :root {
+    --z-index-low: 10;
+    --z-index-medium: 100;
+    --z-index-high: 1000;
+  }
+  

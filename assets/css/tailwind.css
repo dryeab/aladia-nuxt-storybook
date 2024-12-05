@@ -1,12 +1,13 @@
+@import "./tokens.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body, header {
+body,
+header {
   @apply bg-gradient-to-br from-blue-100 to-blue-50;
 }
 
 body {
-    @apply bg-gradient-to-br from-blue-50 to-white;
-  }
-  
+  @apply bg-gradient-to-br from-blue-50 to-white;
+}
